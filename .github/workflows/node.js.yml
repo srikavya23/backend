@@ -28,6 +28,8 @@ jobs:
         with:
           push: true
           tags: srikavyapendiala/backend:latest
+          secrets: |
+            GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
