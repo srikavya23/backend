@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: srikavyapendiala/backend:latest
+          tags: srikavyapendiala/backend:v1
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
       -
