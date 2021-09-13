@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
         - name: server
-          image: stylerhun/multi-server
+          image: srikavyapendiala/backend
           ports:
-            - containerPort: 5000
+            - containerPort: 8000
           env:
             - name: PGUSER
               value: postgres
