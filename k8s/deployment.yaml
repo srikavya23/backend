@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react
+  name: backend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      component: react
+      component: backend
   template:
     metadata:
       labels:
-        component: react
+        component: backend
     spec:
       containers:
-        - name: react
+        - name: backend
           image: srikavyapendiala/backend
           ports:
             - containerPort: 8000
@@ -21,7 +21,7 @@ spec:
             - name: PGUSER
               value: postgres
             - name: PGHOST
-              value: postgres-cluster-ip-service
+              value: postgres-backend
             - name: PGPORT
               value: "5432"
             - name: PGDATABASE
