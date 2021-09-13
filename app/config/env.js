@@ -2,7 +2,7 @@ const env = {
   database: 'loizenaidb',
   username: 'postgres',
   password: '123',
-  host: 'localhost',
+  host: 'postgres',
   dialect: 'postgres',
   pool: {
     max: 5,
@@ -11,5 +11,5 @@ const env = {
     idle: 10000
   }
 };
-
+ 
 module.exports = env;
