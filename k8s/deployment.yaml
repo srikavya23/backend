@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: server-deployment
+  name: react
 spec:
   replicas: 1
   selector:
     matchLabels:
-      component: server
+      component: react
   template:
     metadata:
       labels:
-        component: server
+        component: react
     spec:
       containers:
-        - name: server
+        - name: react
           image: srikavyapendiala/backend
           ports:
             - containerPort: 8000
