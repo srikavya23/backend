@@ -2,7 +2,7 @@ const env = {
   database: 'loizenaidb',
   username: 'postgres',
   password: '123',
-  host: 'localhost',
+  host: 'postgres-service',
   dialect: 'postgres',
   pool: {
     max: 5,
