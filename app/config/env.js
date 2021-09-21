@@ -1,9 +1,9 @@
 const env = {
-  database: '${DATABASE_DB}',
-  username: '${DATABASE_USER}',
-  password: '${DATABASE_PASS}',
-  host: '${DATABASE_HOST}',
-  dialect: 'postgres',
+  database: process.env.PGDATABASE,
+  username: process.env.PGUSER,
+  password: process.env.PGPASS,
+  host: process.env.PGHOST,
+  dialect: process.env.PGDIALECT,
   pool: {
     max: 5,
     min: 0,
